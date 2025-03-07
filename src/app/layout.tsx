@@ -11,7 +11,6 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "DisplayCard | Art Portfolio",
   description: "Art Portfolio Display Component",
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
@@ -21,12 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geist.className} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen bg-white dark:bg-neutral-900 transition-colors">
+      <body className={geist.className}>
+        <ThemeProvider>
+          <main className="min-h-screen bg-white dark:bg-neutral-900 transition-colors duration-300">
             <ThemeToggle />
             {children}
-          </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
