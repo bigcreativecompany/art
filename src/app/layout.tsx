@@ -9,8 +9,9 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "DisplayCard",
+  title: "DisplayCard | Art Portfolio",
   description: "Art Portfolio Display Component",
+  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
