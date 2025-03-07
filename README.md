@@ -1,4 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Big Creative Art Portfolio
+
+A modern, dynamic art portfolio website built with Next.js, showcasing creative works and artistic projects.
+
+## About
+
+This portfolio website is designed to showcase artistic works in an elegant and interactive way. Built with modern web technologies, it provides a seamless experience for viewing and exploring creative content.
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- TailwindCSS
+- Lucide React Icons
 
 ## Getting Started
 

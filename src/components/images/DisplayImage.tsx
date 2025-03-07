@@ -7,26 +7,25 @@ import { X } from 'lucide-react';
 interface DisplayImageProps {
   src: string;
   alt: string;
-  priority?: boolean;
-  className?: string;
 }
 
-export default function DisplayImage({ src, alt, priority = false, className = '' }: DisplayImageProps) {
+export default function DisplayImage({ 
+  src, 
+  alt,
+}: DisplayImageProps) {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   return (
     <>
-      <div className="w-full max-w-3xl mx-auto px-4">
-        <div className="relative w-full h-auto" onClick={() => setIsFullscreen(true)}>
-          <Image
-            src={src}
-            alt={alt}
-            width={1200}
-            height={1200}
-            priority={priority}
-            className="w-full h-auto object-contain"
-          />
-        </div>
+      <div className="relative w-full aspect-square">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-contain"
+          priority
+        />
       </div>
 
       {/* Fullscreen view */}
