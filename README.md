@@ -1,4 +1,4 @@
-# Big Creative Art Portfolio
+# Big Creative
 
 A modern, dynamic art portfolio website built with Next.js, showcasing creative works and artistic projects.
 
